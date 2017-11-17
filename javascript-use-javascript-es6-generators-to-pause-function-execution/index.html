@@ -3,9 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Plunker</title>
 </head>
 <body>
-
+	<script>
+   		var originalConsoleLog = console.log
+    	console.log = function () {
+      		originalConsoleLog.apply(console, arguments)
+      		var args = Array.prototype.slice.call(arguments);
+      		document.body.innerText += args.join(' ') + '\n';
+    	};
+    </script>
+	<script type="script.js"></script>
 </body>
 </html>
