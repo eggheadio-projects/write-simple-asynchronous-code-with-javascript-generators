@@ -6,3 +6,6 @@ function* createHello() {
 const hello = createHello()
 console.log(hello.next())
 console.log(hello.next('Max'))
+
+
+// console.log modified for output in plunker

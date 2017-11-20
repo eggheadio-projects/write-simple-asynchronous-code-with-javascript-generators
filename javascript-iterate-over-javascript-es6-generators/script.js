@@ -9,3 +9,6 @@ const counter = createCounter()
 for (let i of counter) {
 	console.log(i)
 }
+
+
+// console.log modified for output in plunker

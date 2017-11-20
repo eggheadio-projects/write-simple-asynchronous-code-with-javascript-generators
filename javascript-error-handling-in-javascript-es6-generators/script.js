@@ -10,3 +10,6 @@ function* createHello() {
 const hello = createHello()
 hello.next()
 hello.throw('Something went wrong.')
+
+
+// console.log modified for output in plunker

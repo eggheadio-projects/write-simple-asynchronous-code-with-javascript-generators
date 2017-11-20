@@ -14,3 +14,5 @@ function* createCounter() {
 for (let i of createCounter()) {
 	console.log(i)
 }
+
+// console.log modified for output in plunker

@@ -13,3 +13,6 @@ logger.next()
 logger.next()
 logger.next()
 logger.next()
+
+
+// console.log modified for output in plunker

@@ -19,3 +19,6 @@ const coroutine = (gen) => {
 
 const quoteFetcher = coroutine(createQuoteFetcher)
 quoteFetcher.then(quote => console.log(quote))
+
+
+// console.log modified for output in plunker
