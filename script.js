@@ -1,7 +1,8 @@
 function* createQuoteFetcher() {
-  const response = yield fetch('http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json')
-  const quote = yield response.json()
-  return `${quote.quoteText} —${quote.quoteAuthor}`
+  // API switched for use in plunker. Concepts in lesson still apply.
+  const response = yield fetch('https://swapi.co/api/people/1')
+  const person = yield response.json()
+  return `${person.name} —${person.height}`
 }
 
 const coroutine = (gen) => {
@@ -11,7 +12,7 @@ const coroutine = (gen) => {
     if (result.done) return Promise.resolve(result.value)
     return Promise.resolve(result.value)
       .then(res => handle(generator.next(res)))
-	}
+  }
 
   return handle(generator.next())
 }
